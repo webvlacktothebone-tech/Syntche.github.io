@@ -1,0 +1,337 @@
+
+/* =================================
+   1. GENERAL WEBSITE STYLING
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0B0B12;
+    color: #F8FAFC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* =================================
+   2. HEADER
+================================= */
+
+.header {
+    background: linear-gradient(135deg, #24103F, #101827);
+    padding: 55px 20px;
+    margin: 25px;
+    border: 1px solid #8B5CF6;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #2DD4BF;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #CBD5E1;
+    letter-spacing: 2px;
+}
+
+/* =================================
+   3. NAVIGATION BAR
+================================= */
+
+.navbar {
+    background-color: #171421;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #312347;
+}
+
+.navbar a {
+    color: #F8FAFC;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #2DD4BF;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   4. MAIN CONTAINER
+================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* =================================
+   5. GENERAL SECTIONS
+================================= */
+
+.section {
+    background-color: #171421;
+    padding: 30px;
+    border: 1px solid #302642;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    border-color: #8B5CF6;
+    transform: translateY(-4px);
+}
+
+.section h2 {
+    color: #2DD4BF;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #CBD5E1;
+    font-size: 15px;
+}
+
+/* =================================
+   6. HOME / HERO SECTION
+================================= */
+
+.hero {
+    grid-column: 1 / -1;
+    padding: 60px 40px;
+
+    background: linear-gradient(
+        120deg,
+        #24103F,
+        #171421,
+        #102A31
+    );
+}
+
+.intro-label {
+    color: #2DD4BF !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: white;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+/* EXPLORE BUTTON */
+
+.button {
+    display: inline-block;
+    background-color: #2DD4BF;
+    color: #0B0B12;
+    text-decoration: none;
+
+    padding: 12px 25px;
+    margin-top: 15px;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8B5CF6;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   7. EDUCATION SECTION
+================================= */
+
+.education-item {
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background-color: #211B30;
+    border-left: 4px solid #8B5CF6;
+    border-radius: 8px;
+}
+
+.education-item h3 {
+    color: #FFFFFF;
+}
+
+.institution {
+    color: #2DD4BF !important;
+    font-weight: bold;
+}
+
+.date {
+    color: #A78BFA;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* =================================
+   8. CAREER AND PROJECTS
+================================= */
+
+.project-item {
+    background-color: #211B30;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2DD4BF;
+}
+
+.project-item h3 {
+    color: white;
+}
+
+.project-label {
+    color: #2DD4BF;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.role {
+    color: #A78BFA !important;
+    font-size: 14px !important;
+}
+
+/* =================================
+   9. INTERESTS SECTION
+================================= */
+
+.interest-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.interest-item {
+    background-color: #211B30;
+    padding: 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.interest-item h3 {
+    color: #2DD4BF;
+    margin-top: 0;
+}
+
+.interest-item:hover {
+    background-color: #302347;
+    transform: translateY(-5px);
+}
+
+/* =================================
+   10. CONTACT SECTION
+================================= */
+
+.contact-section {
+    grid-column: 1 / -1;
+    text-align: center;
+    background: linear-gradient(135deg, #24103F, #171421);
+}
+
+/* =================================
+   11. FOOTER
+================================= */
+
+.footer {
+    background-color: #171421;
+    border-top: 1px solid #302642;
+
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #94A3B8;
+    font-size: 13px;
+}
+
+/* =================================
+   12. RESPONSIVE DESIGN
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .header {
+        margin: 12px;
+        padding: 35px 15px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .hero {
+        grid-column: auto;
+        padding: 35px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .contact-section {
+        grid-column: auto;
+    }
+
+    .interest-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        margin: 5px;
+        font-size: 13px;
+    }
+}
